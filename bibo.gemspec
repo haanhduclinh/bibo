@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Random responses from available data"
   spec.description   = "Input your data to create amazing talk"
-  spec.homepage      = "git@github.com:haanhduclinh/bibo.git"
+  spec.homepage      = "https://github.com/haanhduclinh/bibo.git"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -31,4 +31,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rubocop", "~> 0.52.1"
+  spec.required_ruby_version = '>= 2.1'
 end

@@ -1,0 +1,35 @@
+AllCops:
+  TargetRubyVersion: 2.1
+  Exclude:
+    - 'examples/**/*'
+    - 'Gemfile'
+    - 'bin/*'
+    - '*.gemspec'
+
+Rails:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+Style/RaiseArgs:
+  EnforcedStyle: compact
+# Maximum line length
+LineLength:
+  Max: 100
+
+# Maximum method length
+MethodLength:
+  Max: 30
+
+# Tune to MethodLength
+Metrics/AbcSize:
+  Max: 30
+
+# Tune to MethodLength
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context', 'before', 'shared_context', 'let']
+  Exclude:
+    - "**/*_spec.rb"
