@@ -1,5 +1,6 @@
 # Bibo
 [![Gem Version](https://badge.fury.io/rb/bibo.svg)](https://badge.fury.io/rb/bibo) [![CI](https://travis-ci.org/haanhduclinh/bibo.svg?branch=master)](https://travis-ci.org/haanhduclinh/bibo) 
+
 Welcome to Bibo. This gem purpose matching response for chatbot from text file.
 
 ## Installation
