@@ -20,11 +20,11 @@ RSpec.describe Bibo::Bibo do
     before do
       src = "./tmp/sample.json"
       sample_json = {
-        "2": "Hello!",
-        "hello": [
+        "2"=> "Hello!",
+        "hello"=> [
           "hi", "2", "xin chao"
         ],
-        "how are you": [
+        "how are you"=> [
           "I'm fine", "it ok"
         ]
       }
