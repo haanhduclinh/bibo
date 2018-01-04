@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require './lib/bibo'
 require 'spec_helper'
+require 'fileutils'
 
 RSpec.describe Bibo::Bibo do
   describe '#run' do
@@ -29,6 +30,7 @@ RSpec.describe Bibo::Bibo do
         ]
       }
 
+      FileUtils.mkdir_p("tmp") unless File.directory?("tmp")
       File.open("./tmp/sample.json", "w") { |f| f.write(sample_json.to_json) }
 
       @bibo = Bibo::Bibo.new(src)
